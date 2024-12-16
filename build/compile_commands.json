@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/jake/projects/CmdEngine/build",
+  "command": "/usr/bin/c++ -g -o CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o -c /home/jake/projects/CmdEngine/src/engine.cpp",
+  "file": "/home/jake/projects/CmdEngine/src/engine.cpp",
+  "output": "CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o"
+},
+{
+  "directory": "/home/jake/projects/CmdEngine/build",
+  "command": "/usr/bin/c++ -g -o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o -c /home/jake/projects/CmdEngine/src/CmdEngine/cmdengine.cpp",
+  "file": "/home/jake/projects/CmdEngine/src/CmdEngine/cmdengine.cpp",
+  "output": "CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o"
+},
+{
+  "directory": "/home/jake/projects/CmdEngine/build",
+  "command": "/usr/bin/c++ -g -o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o -c /home/jake/projects/CmdEngine/src/CmdEngine/cephysics.cpp",
+  "file": "/home/jake/projects/CmdEngine/src/CmdEngine/cephysics.cpp",
+  "output": "CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o"
+}
+]
