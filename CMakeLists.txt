@@ -21,6 +21,8 @@ add_executable(${EXECUTABLE}
   src/CmdEngine/raymath.h 
   src/CmdEngine/rlgl.h
   src/CmdEngine/cephysics.h
-  src/CmdEngine/cephysics.cpp)
+  src/CmdEngine/cephysics.cpp
+  src/CmdEngine/extras.h
+  src/CmdEngine/extras.cpp)
 
 target_link_libraries(${EXECUTABLE} raylib)

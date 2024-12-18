@@ -86,7 +86,7 @@ int main(int argc, char const *argv[])
     }
     else if (action == "--version")
     {
-        std::cout << "CmdEngine v1.0.0-alpha.1.0";
+        std::cout << "CmdEngine v1.0.0-alpha.2.0";
     }
 
     else if (action == "--clean"){

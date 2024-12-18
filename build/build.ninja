@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: CmdEngine
-# Configurations: Debug
+# Configurations: 
 # =============================================================================
 
 #############################################
@@ -20,11 +20,6 @@
 
 ninja_required_version = 1.5
 
-
-#############################################
-# Set configuration variable for custom commands.
-
-CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,21 +44,23 @@ cmake_ninja_workdir = /home/jake/projects/CmdEngine/build/
 
 build cmake_object_order_depends_target_Cmd_Engine: phony || CMakeFiles/Cmd_Engine.dir
 
-build CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_Debug /home/jake/projects/CmdEngine/src/engine.cpp || cmake_object_order_depends_target_Cmd_Engine
+build CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_ /home/jake/projects/CmdEngine/src/engine.cpp || cmake_object_order_depends_target_Cmd_Engine
   DEP_FILE = CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o.d
-  FLAGS = -g
   OBJECT_DIR = CMakeFiles/Cmd_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles/Cmd_Engine.dir/src
 
-build CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_Debug /home/jake/projects/CmdEngine/src/CmdEngine/cmdengine.cpp || cmake_object_order_depends_target_Cmd_Engine
+build CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_ /home/jake/projects/CmdEngine/src/CmdEngine/cmdengine.cpp || cmake_object_order_depends_target_Cmd_Engine
   DEP_FILE = CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o.d
-  FLAGS = -g
   OBJECT_DIR = CMakeFiles/Cmd_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles/Cmd_Engine.dir/src/CmdEngine
 
-build CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_Debug /home/jake/projects/CmdEngine/src/CmdEngine/cephysics.cpp || cmake_object_order_depends_target_Cmd_Engine
+build CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_ /home/jake/projects/CmdEngine/src/CmdEngine/cephysics.cpp || cmake_object_order_depends_target_Cmd_Engine
   DEP_FILE = CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o.d
-  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Cmd_Engine.dir
+  OBJECT_FILE_DIR = CMakeFiles/Cmd_Engine.dir/src/CmdEngine
+
+build CMakeFiles/Cmd_Engine.dir/src/CmdEngine/extras.cpp.o: CXX_COMPILER__Cmd_Engine_unscanned_ /home/jake/projects/CmdEngine/src/CmdEngine/extras.cpp || cmake_object_order_depends_target_Cmd_Engine
+  DEP_FILE = CMakeFiles/Cmd_Engine.dir/src/CmdEngine/extras.cpp.o.d
   OBJECT_DIR = CMakeFiles/Cmd_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles/Cmd_Engine.dir/src/CmdEngine
 
@@ -75,8 +72,7 @@ build CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o: CXX_COMPILER__Cmd
 #############################################
 # Link the executable Cmd_Engine
 
-build Cmd_Engine: CXX_EXECUTABLE_LINKER__Cmd_Engine_Debug CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o
-  FLAGS = -g
+build Cmd_Engine: CXX_EXECUTABLE_LINKER__Cmd_Engine_ CMakeFiles/Cmd_Engine.dir/src/engine.cpp.o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cmdengine.cpp.o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/cephysics.cpp.o CMakeFiles/Cmd_Engine.dir/src/CmdEngine/extras.cpp.o
   LINK_LIBRARIES = -lraylib
   OBJECT_DIR = CMakeFiles/Cmd_Engine.dir
   POST_BUILD = :

@@ -1,12 +1,18 @@
 #include "cephysics.h"
 
-void CEPhysicsBasic::applyXPhysics(CERectangle* rec)
+void CEPhysicsBasic::applyXPhysics(CECircle* rec)
 {
   velocityX += accelerationX;
   rec->x += velocityX;
 }
 
-void CEPhysicsBasic::applyXPhysics(CECircle* rec)
+void CEPhysicsBasic::applyYPhysics(CECircle* rec)
+{
+  velocityY += accelerationY;
+  rec->y += velocityY;
+}
+
+void CEPhysicsBasic::applyXPhysics(CERectangle* rec)
 {
   velocityX += accelerationX;
   rec->x += velocityX;
@@ -18,11 +24,7 @@ void CEPhysicsBasic::applyYPhysics(CERectangle* rec)
   rec->y += velocityY;
 }
 
-void CEPhysicsBasic::applyYPhysics(CECircle* rec)
-{
-  velocityY += accelerationY;
-  rec->y += velocityY;
-}
+
 
 void CERectanglePhysicsBasic::applyXPhysics()
 {

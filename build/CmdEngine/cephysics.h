@@ -10,10 +10,13 @@ class CEPhysicsBasic {
 
   protected:
   void applyXPhysics(CERectangle* rec);
-  void applyXPhysics(CECircle* rec);
   
   void applyYPhysics(CERectangle* rec);
+
+  void applyXPhysics(CECircle* rec);
+  
   void applyYPhysics(CECircle* rec);
+  
 };
 
 

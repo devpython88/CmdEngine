@@ -59,8 +59,9 @@ bool GameWindow::isOpen()
 void GameWindow::close()
 {
   if (!textures.empty()){
-    for (Texture2D& texture : textures) UnloadTexture(texture);
+    for (Texture2D* texture : textures) UnloadTexture(*texture);
   }
+  CloseAudioDevice();
   CloseWindow();
 }
 
@@ -90,4 +91,41 @@ void CECircle::draw()
 void TextBox::draw()
 {
   DrawText(content.c_str(), x, y, textSize, color);
+}
+
+bool Mouse::isButtonDown(int button)
+{
+  return IsMouseButtonDown(button);
+}
+
+bool Mouse::isButtonPressed(int button)
+{
+  return IsMouseButtonPressed(button);
+}
+
+bool Mouse::isButtonReleased(int button)
+{
+  return IsMouseButtonReleased(button);
+}
+
+bool Mouse::isPressingObject(CERectangle obj)
+{
+  return isHoveringOver(obj) && IsMouseButtonDown(Left);
+}
+
+bool Mouse::isHoveringOver(CERectangle obj)
+{
+  // Hitbox for cursor
+  CERectangle cursorHitbox(getX(), getY(), 10, 10, WHITE);
+  return cursorHitbox.intersectsWith(obj);
+}
+
+int Mouse::getX()
+{
+  return GetMouseX();
+}
+
+int Mouse::getY()
+{
+  return GetMouseY();
 }
